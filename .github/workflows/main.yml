@@ -39,7 +39,7 @@ jobs:
         if: success() || failure()
         with:
           name: Tests Report Chrome_Linux
-          path: 'target/surefire-reports/TEST-*.xml'
+          path: 'gosecuri/target/surefire-reports/TEST-*.xml'
           reporter: java-junit
  
 
@@ -72,7 +72,7 @@ jobs:
         if: success() || failure()
         with:
           name: Tests Report Firefox_Windows
-          path: 'target/surefire-reports/TEST-*.xml'
+          path: 'gosecuri/target/surefire-reports/TEST-*.xml'
           reporter: java-junit
       - name: Run Tests
         continue-on-error: true
