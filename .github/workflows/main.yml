@@ -74,6 +74,4 @@ jobs:
           name: Tests Report Firefox_Windows
           path: 'gosecuri/target/surefire-reports/TEST-*.xml'
           reporter: java-junit
-      - name: Run Tests
-        continue-on-error: true
-        run: mvn test -DbrowserType="firefox" -DheadlessExecution="true"  -Dtest="${{ github.event.inputs.testsPath }}"
+     
